@@ -43,35 +43,6 @@ func (e *Employee) PrintInfo() {
 
 // ------------------------------------------------------------------//
 
-func Task_One() {
-	Bond := Account{"007", "Bond", 377.50}
-
-	fmt.Println(Bond.Balance)
-	Bond.Deposit(22.5)
-	Bond.Withdraw(100.00)
-	Bond.Withdraw(500.00)
-	fmt.Println(Bond.Balance)
-}
-
-/*
-func main() {
-	Bond := Account{"007", "Bond", 377.50}
-
-	fmt.Println(Bond.Balance)
-	Bond.Deposit(22.5)
-	Bond.Withdraw(100.00)
-	Bond.Withdraw(500.00)
-	fmt.Println(Bond.Balance)
-	// ------------------------------------------------------------------//
-
-	pavel := Person{"Паша", 40}
-	e := Employee{Person{"Анна", 30}, "Разработчик"}
-
-	pavel.PrintInfo()
-	e.PrintInfo()
-
-}
-*/
 /*
 	Задача 1: Управление счетами клиентов
 
@@ -102,6 +73,15 @@ func main() {
 
 	Недостаточно средств
 */
+func Task_One() {
+	Bond := Account{"007", "Bond", 377.50}
+
+	fmt.Println(Bond.Balance)
+	Bond.Deposit(22.5)
+	Bond.Withdraw(100.00)
+	Bond.Withdraw(500.00)
+	fmt.Println(Bond.Balance)
+}
 
 /*
 Задача 2: Расширение структуры через эмбеддинг
@@ -118,3 +98,10 @@ func main() {
 	Ожидаемый вывод:
 		Имя: Анна, Возраст: 30, Должность: Разработчик
 */
+func Task_Two() {
+	pavel := Person{"Паша", 40}
+	e := Employee{Person{"Анна", 30}, "Разработчик"}
+
+	pavel.PrintInfo()
+	e.PrintInfo()
+}
